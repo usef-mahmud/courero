@@ -34,7 +34,7 @@ const Header = ({ is_loggedin }) => {
                 Login
               </Link>
               <Link to={'/signup'} className="signup__btn">
-                Signup
+                Sign up
               </Link>
             </div>
           }

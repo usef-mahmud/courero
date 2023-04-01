@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 import './Signup.scss'
 import { checkUserLoggedIn } from '../../funcs/checkUserLoggedIn'
+import SignupForm from '../../components/SignupForm/SignupForm'
 const Singup = () => {
   const navigate = useNavigate()
   const [isLoggedIn, setIsLoggedIn] = useState()
@@ -25,6 +26,9 @@ const Singup = () => {
 
     <div className='signup-page'>
       <Header is_loggedin={isLoggedIn} />
+      <div className="singup-page__container">
+        <SignupForm />
+      </div>
     </div>
 
   )

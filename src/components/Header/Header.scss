@@ -2,11 +2,13 @@
     background-color: var(--bg-sec-color);
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
 
     .header__container {
         display: flex;
         width: 100%;
-        padding: 17px 45px;
+        padding: 12px 40px;
         justify-content: space-between;
 
         .main__section {
@@ -31,13 +33,13 @@
                     position: relative;
 
                     input {
-                        width: calc(100% - 84px);
+                        width: calc(100% - 75px);
                         background-color: var(--bg-color);
                         border: none;
                         outline: none;
-                        font-size: 20px;
-                        padding: 10px 22px;
-                        padding-right: calc(44px + 18px);
+                        font-size: 18px;
+                        padding: 8px 15px;
+                        padding-right: calc(30px + 18px);
                         border-radius: 8px;
                         font-family: 'Inter';
                         font-weight: 400;
@@ -49,10 +51,10 @@
 
                     .search__icon {
                         position: absolute;
-                        right: 22px;
+                        right: 25px;
                         top: 50%;
                         transform: translateY(-50%);
-                        font-size: 22px;
+                        font-size: 20px;
                         display: flex;
                         align-items: center;
                         cursor: pointer;
@@ -70,9 +72,10 @@
                 align-items: center;
                 font-family: 'Inter';
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 18px;
 
                 .signup__btn{
+                    white-space: nowrap;
                     background-color: var(--primary-color);
                     color: var(--bg-sec-color);
                     padding: 10px 15px;

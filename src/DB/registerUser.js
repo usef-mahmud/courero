@@ -22,7 +22,8 @@ const register = async (first_name, last_name, email, password) => {
             public_profile: false,
             location: [0, 0],
             email_verified: false,
-            username: ''
+            username: '',
+            info: ''
         })
         await addDoc(verificationCodesRef, {
             user_id: currentUser.id
