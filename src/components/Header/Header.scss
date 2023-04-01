@@ -1,0 +1,96 @@
+.main__header {
+    background-color: var(--bg-sec-color);
+    display: flex;
+    align-items: center;
+
+    .header__container {
+        display: flex;
+        width: 100%;
+        padding: 17px 45px;
+        justify-content: space-between;
+
+        .main__section {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .header__logo {
+                img {
+                    max-height: 25px;
+                }
+            }
+
+            .header__search {
+                margin-left: 100px;
+
+                width: 100%;
+
+                .search__box {
+                    min-width: fit-content;
+                    max-width: 50%;
+                    position: relative;
+
+                    input {
+                        width: calc(100% - 84px);
+                        background-color: var(--bg-color);
+                        border: none;
+                        outline: none;
+                        font-size: 20px;
+                        padding: 10px 22px;
+                        padding-right: calc(44px + 18px);
+                        border-radius: 8px;
+                        font-family: 'Inter';
+                        font-weight: 400;
+
+                        &::placeholder {
+                            color: #C5C4C4;
+                        }
+                    }
+
+                    .search__icon {
+                        position: absolute;
+                        right: 22px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 22px;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        .user__section {
+            display: flex;
+
+            .registering__buttons {
+                display: flex;
+                align-items: center;
+                font-family: 'Inter';
+                font-weight: bold;
+                font-size: 20px;
+
+                .signup__btn{
+                    background-color: var(--primary-color);
+                    color: var(--bg-sec-color);
+                    padding: 10px 15px;
+                    border-radius: 8px;
+                    user-select: none;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                }
+                .login__btn{
+                    color: var(--primary-color);
+                    user-select: none;
+                    cursor: pointer;
+                    margin: 0 20px;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}
